@@ -1,0 +1,40 @@
+import math
+import random
+import matplotliy.pyplot as plt
+
+laser_data_point = 0.0
+
+two_d_point = []
+
+world = 200^2 * pi
+world_border = 200
+
+class Robot:
+    # Class for Robot Object
+    def __init__(self):
+        # Place robot on random parts of the map
+        self.x = random.random() * world
+        self.y = random.random() * world
+        self.orientation = random.random() * 2.0 * pi
+        
+        self.forward_noise = 0.0 #Noise of forward movement
+        self.turn_noise = 0.0 # Noise of turn
+        self.sense_noise = 0.0 #noise of the sensing
+        
+        
+    def set(set, coordinate_x, coordinate_y, orientation):
+        #Robot moves and senses environment 
+        
+        if coordinate_x <= 0 or coordinate_x >= world_border:
+            raise ValueError('X coordinate out of bounds')
+        if coordinate_y <= 0 or coordinate_y >= world_border:
+            raise ValueError('Y coordinate out of bounds')
+        if orientation <= 0 or orientation >= 2 * pi:
+            raise ValueError('Orientation out of bounds')
+
+        self.x = float(coordinate_x)
+        self.y = float(coordinate_y)
+        self.orientation = float(orientation)
+        
+    def set_noise(self, new_forward_noise, new_turn_noise, new_sense_noise):
+        
