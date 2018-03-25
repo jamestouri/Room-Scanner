@@ -1,7 +1,7 @@
 import math
 import random
-#import matplotlib.pyplot as plt 
+# import matplotlib.pyplot as plt 
 from robot import Robot
-from data_process import SensorDistance
+from data_process import DistanceSensor
 
 robot = Robot()
