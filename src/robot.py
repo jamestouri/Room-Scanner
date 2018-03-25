@@ -2,14 +2,14 @@ import math
 from math import pi
 import random
 # import matplotlib.pyplot as plt
-# from data_process import DistanceSensor
+from data_process import DistanceSensor
 
 laser_data_point = 0.0
 
 landmarks = []
 
-world = 0
-world_border = 0
+world_border = 2000
+world = world_border ** 2 * pi
 
 class Robot:
     # Class for Robot Object
@@ -103,6 +103,9 @@ class Robot:
             prob *= self.gaussian(dist, self.sense_noise, measurement[i])
         return prob
         
+
+
+
         
         
         
