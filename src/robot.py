@@ -1,10 +1,12 @@
 import math
 from math import pi
 import random
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from data_process import DistanceSensor
 
-laser_data_point = 0.0
+laser = DistanceSensor()
+
+laser_data_point = []
 
 landmarks = []
 
