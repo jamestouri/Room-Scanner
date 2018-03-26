@@ -1,5 +1,5 @@
 # Room-Scanner
-Raspberry Pi takes 360 degree view and clicks data points to understand its environment
+Raspberry Pi takes 360 degree view and clicks data points to understand its environment.  Collaborative Project from James Touri and Alex Henderson
 
 The room scanner takes data from it’s surroundings with a 1D laser to build a simulated environment for a robot to understand landmarks and move around with Gaussian Probability for localization solutions. 
 
@@ -20,6 +20,11 @@ Python 3
 [RPi.GPIO](https://pypi.python.org/pypi/RPi.GPIO)
 
 ## Building the Device
+
+![](https://github.com/jamestouri/Room-Scanner/blob/master/20180325_1730261.jpg)
+Powered and run by a Raspberry Pi 3, a 3d printed rotary table turns via a geared DC can motor. The motor will be run via a 11.1v lipoly battery and the pi will be run using a 7.4v lipoly battery and a 5v switching regulator. We are utilizing a Laser PING IR rangefinder that we be switched from analog to digital signal via a Arduino nano.
+
+We will be running the motor at 10V with a voltage regulator to ensure the motor stays at 10V and constant speed (if this proves to be a problem we will look into a geared motor with an encoder and mosfet).
 
 ## Converting the data points from the voltage
 
