@@ -16,7 +16,7 @@ def main():
 
 	# x, y = laser.coordinates_converter(1.3, 210, 2000, 2000)
 
-
+	# Trying it with actual list for output 
 	voltage_list = [[.3, 130], [1.2, 800], [.8, 401]]
 
 	for volt in range(len(voltage_list)):
