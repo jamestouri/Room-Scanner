@@ -1,5 +1,5 @@
 # Room-Scanner
-Raspberry Pi takes 360 degree view and clicks data points to understand its environment.  Collaborative Project from James Touri and Alex Henderson
+Raspberry Pi takes 360 degree view and clicks data points to understand its environment.  Collaborative project by James Touri and Alex Henderson
 
 The room scanner takes data from it’s surroundings with a 1D laser to build a simulated environment for a robot to understand landmarks and move around with Gaussian Probability for localization solutions. 
 
